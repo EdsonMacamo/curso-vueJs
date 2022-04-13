@@ -11,7 +11,13 @@
     <script src="src/app.js" defer></script>
 
 <div id="app">
-    <p>O meu nome e : {{ name }} , e te  {{idade}} </p>
+    <form id=""app-form>
+        <input type="text" v-model="input_name" placeholder="Digite o seu nome">
+        <input type="submit" value="Enviar" v-on:click="submitForm">
+
+    </form>
+    <p>O meu nome e : {{ name }}  </p>
+    <p>Data binding: {{ input_name }}</p>}
 </div>
 
 
